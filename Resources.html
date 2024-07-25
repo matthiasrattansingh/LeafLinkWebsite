@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/footer.css">
+		<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+		
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" type="x-icon" href = "pictures/Green Geometric Wind Energy Turbine Logo.png"> 
+		<title>LeafLink</title>
+
+		<style>
+			.video-container {
+				text-align: center;
+				margin-top: 20px;
+			}
+
+			.top-hero{
+				height: 40vh;
+
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.top-hero h1{
+				font-size: clamp(2rem, 5vw, 3.5rem);
+				font-family: Roboto Slab;
+				font-weight: 500;
+				margin-top: 10%;
+			}
+
+			.top-hero p{
+				font-size: clamp(1.5rem, 1vw, 2rem);
+			}
+
+			.content {
+				max-width: 1000px;
+				margin: 50px auto;
+				padding: 20px;
+			}
+
+			.paragraph {
+				margin-bottom: 40px;
+			}
+
+			.paragraph h1{
+				margin-bottom: 1%;
+				font-size: clamp(1.5rem, 2vw, 2rem);
+				font-family: Roboto Slab;
+			}
+
+			.paragraph p{
+				margin-bottom: 1%;
+				font-size: clamp(1rem, 2vw, 1.2rem);
+				font-family: Mulish;
+				line-height: 30px;
+			}
+
+			.paragraph2 {
+				margin-bottom: 40px;
+			}
+
+			.paragraph2 h1{
+				margin-bottom: 1%;
+				font-size: clamp(1.5rem, 2vw, 2rem);
+				font-family: Roboto Slab;
+			}
+
+			.paragraph2 p{
+				margin-bottom: 1%;
+				font-size: clamp(1rem, 2vw, 1.2rem);
+				font-family: Mulish;
+				line-height: 30px;
+			}
+
+			iframe {
+				width: 100%;
+				max-width: 1000px;
+				height: 450px;
+				border: 5px solid var(--primary-color);
+				border-radius: 16px;
+			}
+
+			.tabbed-paragraph{
+				display: flex;
+				flex-direction: column;
+				width: 90%;
+				margin-left: 5%;
+				margin-top: 2%;
+			}
+
+			.tabbed-paragraph h2{
+				margin-bottom: 1%;
+				font-size: clamp(1.5rem, 2vw, 1.5rem);
+				font-family: Roboto Slab;
+			}
+
+			.tabbed-paragraph a{
+				text-decoration: none;
+				color: var(--secondary-color);
+				text-decoration: underline;
+
+				margin-bottom: 1%;
+				font-size: clamp(1.5rem, 2vw, 1.5rem);
+				font-family: Roboto Slab;
+
+			}
+
+			.tabbed-paragraph p{
+				margin-bottom: 1%;
+				font-size: clamp(1rem, 2vw, 1.2rem);
+				font-family: Mulish;
+				line-height: 30px;
+			}
+
+			.tabbed-paragraph3{
+				display: flex;
+				flex-direction: column;
+				width: 90%;
+				margin-left: 5%;
+			}
+
+			.tabbed-paragraph2{
+				display: flex;
+				flex-direction: column;
+				width: 90%;
+				margin-left: 5%;
+			}
+
+			.tabbed-paragraph2 a{
+				text-decoration: none;
+				color: var(--secondary-color);
+
+				margin-bottom: 1%;
+				font-size: clamp(1rem, 2vw, 1.2rem);
+				font-family: Roboto Slab;
+				font-weight: 400;
+
+				transition: all 0.2s ease;
+				cursor: pointer;
+			}
+
+			.tabbed-paragraph2 a:hover{
+				text-decoration: underline;
+			}
+
+			.tabbed-paragraph3{
+				display: flex;
+				flex-direction: column;
+				width: 90%;
+				margin-left: 5%;
+			}
+
+			@media (max-width: 768px) {
+				.video-container {
+				text-align: center;
+				margin-top: 20px;
+				width: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			iframe {
+				width: 80%;
+				max-width: 1000px;
+				height: 450px;
+				border: 5px solid var(--primary-color);
+				border-radius: 16px;
+			}
+
+			.top-hero{
+				height: 40vh;
+
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.top-hero h1{
+				font-size: clamp(2rem, 5vw, 3.5rem);
+				font-family: Roboto Slab;
+				font-weight: 500;
+				margin-top: 30%;
+			}
+
+			.top-hero p{
+				font-size: clamp(1.5rem, 1vw, 2rem);
+				width: 80%;
+			}
+			}
+
+			.citation {
+				margin-bottom: 25px;
+				padding-left: 30px;
+				text-indent: -30px;
+
+				font-family: Mulish;
+				font-size: 1.2rem;
+				word-break: break-all;
+      }
+		
+			body {
+				margin: 40px;
+			}
+
+			.source-title{
+				padding-bottom: 2%;
+			}
+
+			.source-title h1{
+				text-decoration: underline;
+			}
+
+		</style>
+	</head>
+	<body>
+
+		<header id="header">
+			<a href="index.html" class="logo"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" zoomAndPan="magnify" 
+				viewBox="0 0 375 374.999991" height="40" preserveAspectRatio="xMidYMid meet" version="1.0"><defs><clipPath id="064bb1306f">
+			 <path class="svg-color" d="M 4 5 L 371 5 L 371 370.386719 L 4 370.386719 Z M 4 5 " clip-rule="nonzero"/></clipPath></defs><g clip-path="url(#064bb1306f)"><path class = "svg-color" fill="#0e1514" d="M 367.546875 136.488281 C 367.554688 136.480469 367.554688 136.480469 367.558594 136.480469 C 371.109375 132.929688 371.109375 127.171875 367.558594 123.621094 L 280.75 36.808594 C 261.25 17.304688 229.515625 17.304688 210.015625 36.808594 L 181.078125 65.742188 C 180.484375 66.339844 179.96875 66.972656 179.410156 67.589844 C 178.386719 56.351562 173.585938 45.394531 165.007812 36.808594 L 136.070312 7.871094 C 135.914062 7.714844 135.726562 7.59375 135.566406 7.453125 C 135.265625 7.195312 134.96875 6.917969 134.648438 6.703125 C 131.117188 4.375 126.324219 4.761719 123.214844 7.871094 L 36.398438 94.679688 C 16.894531 114.179688 16.894531 145.914062 36.398438 165.410156 L 65.328125 194.335938 C 65.328125 194.34375 65.332031 194.34375 65.332031 194.351562 C 65.921875 194.941406 66.5625 195.460938 67.171875 196.019531 C 55.9375 197.046875 44.984375 201.84375 36.398438 210.425781 L 7.476562 239.351562 C 7.46875 239.359375 7.46875 239.359375 7.460938 239.359375 C 3.914062 242.910156 3.914062 248.667969 7.460938 252.21875 L 94.269531 339.027344 C 103.71875 348.476562 116.277344 353.675781 129.632812 353.675781 C 142.996094 353.675781 155.558594 348.476562 165 339.027344 L 193.9375 310.089844 C 194.523438 309.503906 195.042969 308.863281 195.601562 308.253906 C 196.628906 319.488281 201.429688 330.441406 210.007812 339.027344 L 238.929688 367.941406 C 238.9375 367.949219 238.945312 367.953125 238.949219 367.960938 C 240.730469 369.742188 243.050781 370.625 245.378906 370.625 C 247.707031 370.625 250.03125 369.742188 251.808594 367.960938 L 338.617188 281.152344 C 358.117188 261.652344 358.117188 229.917969 338.617188 210.417969 L 309.679688 181.480469 C 309.085938 180.886719 308.453125 180.371094 307.835938 179.8125 C 319.078125 178.785156 330.03125 173.996094 338.617188 165.410156 Z M 267.894531 49.664062 L 348.273438 130.042969 L 325.765625 152.550781 C 313.347656 164.960938 293.164062 164.960938 280.75 152.550781 C 280.738281 152.535156 280.722656 152.53125 280.699219 152.515625 L 251.875 123.691406 C 251.851562 123.667969 251.839844 123.636719 251.816406 123.617188 C 234.777344 106.578125 208.40625 104.433594 189.011719 117.164062 C 181.882812 104.976562 183.503906 89.046875 193.941406 78.601562 L 222.878906 49.664062 C 235.289062 37.253906 255.476562 37.253906 267.894531 49.664062 Z M 325.757812 268.304688 L 245.386719 348.675781 L 222.878906 326.167969 C 210.46875 313.757812 210.46875 293.566406 222.878906 281.152344 C 222.894531 281.140625 222.902344 281.125 222.917969 281.101562 L 251.761719 252.253906 C 251.777344 252.238281 251.800781 252.234375 251.816406 252.21875 C 268.855469 235.179688 271.003906 208.808594 258.265625 189.417969 C 270.453125 182.292969 286.382812 183.914062 296.824219 194.351562 L 325.757812 223.289062 C 338.171875 235.691406 338.171875 255.894531 325.757812 268.304688 Z M 136.085938 239.367188 C 136.078125 239.359375 136.078125 239.351562 136.070312 239.351562 L 107.132812 210.417969 C 107.105469 210.386719 107.066406 210.363281 107.039062 210.335938 C 106.480469 209.777344 105.882812 209.292969 105.304688 208.773438 C 113.890625 207.992188 122.007812 205.03125 129.03125 200.179688 L 152.140625 223.28125 L 173.710938 244.851562 C 169.113281 247.34375 163.949219 248.675781 158.570312 248.675781 C 150.082031 248.683594 142.097656 245.371094 136.085938 239.367188 Z M 49.253906 107.535156 L 129.632812 27.15625 L 152.140625 49.664062 C 164.554688 62.074219 164.554688 82.269531 152.140625 94.679688 C 152.128906 94.695312 152.121094 94.710938 152.105469 94.730469 L 123.257812 123.578125 C 123.242188 123.59375 123.226562 123.601562 123.207031 123.617188 C 113.757812 133.066406 108.554688 145.625 108.554688 158.980469 C 108.554688 168.882812 111.425781 178.347656 116.761719 186.429688 C 111.933594 189.261719 106.441406 190.804688 100.699219 190.804688 C 92.195312 190.804688 84.203125 187.492188 78.199219 181.480469 C 78.191406 181.472656 78.191406 181.472656 78.183594 181.472656 L 49.253906 152.542969 C 36.851562 140.140625 36.851562 119.949219 49.253906 107.535156 Z M 210.015625 165.417969 L 232.523438 187.925781 L 210.015625 210.429688 L 187.507812 232.9375 L 165 210.429688 L 142.492188 187.925781 L 187.507812 142.910156 Z M 175.265625 129.433594 L 152.148438 152.558594 L 130.578125 174.128906 C 128.085938 169.53125 126.753906 164.367188 126.753906 158.988281 C 126.753906 150.5 130.058594 142.523438 136.046875 136.511719 C 136.054688 136.503906 136.070312 136.496094 136.078125 136.480469 L 165.015625 107.542969 C 165.042969 107.515625 165.066406 107.476562 165.097656 107.445312 C 165.652344 106.882812 166.152344 106.277344 166.679688 105.699219 C 167.433594 114.0625 170.320312 122.246094 175.265625 129.433594 Z M 199.769531 246.390625 L 222.871094 223.28125 L 244.433594 201.726562 C 250.9375 213.773438 249.128906 229.152344 238.972656 239.332031 C 238.964844 239.339844 238.949219 239.34375 238.9375 239.359375 L 210 268.296875 C 209.96875 268.328125 209.949219 268.363281 209.917969 268.394531 C 209.359375 268.953125 208.875 269.546875 208.355469 270.125 C 207.589844 261.539062 204.628906 253.421875 199.769531 246.390625 Z M 245.996094 175.675781 L 222.871094 152.558594 L 201.316406 130.996094 C 213.363281 124.5 228.742188 126.308594 238.921875 136.457031 C 238.929688 136.464844 238.9375 136.480469 238.949219 136.488281 L 267.886719 165.425781 C 267.917969 165.453125 267.953125 165.476562 267.984375 165.503906 C 268.550781 166.0625 269.152344 166.5625 269.738281 167.089844 C 261.371094 167.847656 253.183594 170.730469 245.996094 175.675781 Z M 107.128906 326.167969 L 26.753906 245.796875 L 49.261719 223.289062 C 61.679688 210.886719 81.867188 210.886719 94.277344 223.289062 C 94.292969 223.304688 94.308594 223.3125 94.328125 223.324219 L 123.175781 252.171875 C 123.191406 252.1875 123.199219 252.203125 123.214844 252.21875 C 132.664062 261.667969 145.222656 266.867188 158.578125 266.867188 C 168.480469 266.867188 177.945312 263.996094 186.027344 258.660156 C 188.859375 263.484375 190.402344 268.980469 190.402344 274.726562 C 190.402344 283.230469 187.089844 291.222656 181.078125 297.234375 L 152.140625 326.167969 C 139.738281 338.578125 119.546875 338.578125 107.128906 326.167969 Z M 107.128906 326.167969 " fill-opacity="1" fill-rule="nonzero"/></g></svg>LeafLink</a>
+			<div class="menuToggle"></div>
+			<nav>
+				<ul class="ul1">
+					<li class="li1"><a href="Resources.html">About us</a></li>
+					<li class="li1"><a href="solutions.html">Energy Solutions</a></li>
+					<li class="li1"><a href="#">Community +</a>
+						<ul>
+							<li class="li1"><a href="Effects.html">Effects</a></li>
+							<li><a href="news.html">News</a></li>
+							<li><a href="buildhome.html">Plan a Home</a></li>
+						</ul>
+					</li>
+					<li class="li2"><a href="sign-up.html">Log In</a></li>
+				</ul>
+			</nav>
+		</header>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+		<script>
+			let menuToggle = document.querySelector('.menuToggle');
+			let header = document.querySelector('header');
+			menuToggle.onclick = function(){
+				header.classList.toggle('active');
+			}
+		</script>
+			<div class="img-fixed fixed1"><img src="pictures/Add a little bit of body text.png" id="darkmode-toggle"></div>
+
+
+
+		<div class="top-hero">
+			<h1>About Us</h1>
+			<p>Learn more about who we are and what we do.</p>
+		</div>
+
+		<div class="video-container">
+			<!-- Replace the iframe src with your YouTube video embed code -->
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/JD4ScrrPCgc?si=L-NAObysnc1HzJLs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		</div>
+
+		<div class="content">
+			<div class="paragraph">
+				<h1>Who We Are</h1>
+				<p>At LeafLink, we're passionate about cleaning the environment. Our journey began the two founders who create LeafLink from the ground up. 
+					Since then, we've been dedicated to keep the earth clean and make the world a better place. 
+					Through our commitment to fighting for green energy, we strive to change the world for the better.</p>
+			</div>
+
+			<div class="paragraph">
+				<h1>Join Us</h1>
+				<p>LeafLink is more than just a clean renewable website; we're a community
+					that protects each other and strives for a common goal. Whether you're planting trees or using solar panels,
+					  we're here to be with you and cultivate a group that follow the same interests. Join us in our journey to save the planet.
+						 Together, we can do anything and everything.</p>
+			</div>
+
+			<div class="paragraph">
+				<h1>Our Links: </h1>
+
+				<div class="tabbed-paragraph">
+					<h2><a href="pictures/IMG_0701.pdf">Copyright Checklist</a></h2>
+					<p>The copyright checklist ensures that we did not use any copyrighted pictures,music, or videos without permission. </p>
+				</div>
+
+				<div class="tabbed-paragraph">
+					<h2><a href="pictures/All images are copyright free – With all coming from Canva T (2).pdf">About Our Website</a></h2>
+					<p>This explains the ins-and-outs of our website. This contains the languages and resources that we used to construct this website. </p>
+				</div>
+
+				<div class="tabbed-paragraph">
+					<h2><a href="pictures/Web-worklog.pdf">Plan of Work Log</a></h2>
+					<p>The work long desribes the steps and process our team went through. It also shows the division in work and what we did to make the website.</p>
+				</div>
+
+			</div>
+
+			<div class="paragraph">
+				<h1>About the Website</h1>
+				<p>All images are copyright free – With all designs coming from Canva, the royalty free pictures and images from Pexels, Unsplash, and icons from Flaticon. 
+
+					Videos and other types of animation videos such as GIFS were copyright free and created from Canva or retrieved from Pexels/Unsplash. 
+					
+					Our idea behind this website was to simply convey the information present in an effective way while also creating a fun, interactive, and professional site. 
+					We wanted the website to, of course, answer the prompt but also go beyond that and 
+					create a fun environment that was user friendly. In the end, we strived to create a site that would be enjoyed and resonate with those who interacted with it.</p>
+			</div>
+
+			<div class="paragraph">
+				<h1>Programming Languages: </h1>
+
+				<div class="tabbed-paragraph">
+					<p>HTML </p>
+				</div>
+
+				<div class="tabbed-paragraph">
+					<p>CSS </p>
+				</div>
+
+				<div class="tabbed-paragraph">
+					<p>JAVASCRIPT</p>
+				</div>
+				<div class="tabbed-paragraph">
+					<p>GSAP - ALL ANIMATIONS WERE WORKS OF THE TEAM</p>
+				</div>
+				<div class="tabbed-paragraph">
+					<p>JQUERY - ALL ANIMATIONS WERE WORKS OF THE TEAM</p>
+				</div>
+
+			</div>
+
+
+
+			<div class="paragraph">
+				<h1><a>Site Map: </a></h1>
+				<p>A sitemap is a map of a website's structure, showing the hierarchy
+					and connections between its pages. It helps users navigate the site
+					and helps in indexing its content for better discoverability.
+				</p>
+				<div class="tabbed-paragraph2">
+					<p><a href="index.html">Home</a></p>
+					<p><a href="Resources.html">About Us</a></p>
+					<p><a href="solutions.html">Energy Solutions</a></p>
+					<div class="tabbed-paragraph3">
+						<p><a href="batSUB.html">batSub</a></p>
+						<p><a href="bioSUB.html">BioSub</a></p>
+						<p><a href="evSUB.html">EvSub</a></p>
+						<p><a href="geoSUB.html">GeoSub</a></p>
+						<p><a href="solarSUB.html">SolarSub</a></p>
+						<p><a href="ThermoSUB.html">ThermosSub</a></p>
+						<p><a href="windSUB.html">WindSub</a></p>
+					</div>
+					<p>Community</p>
+						<div class="tabbed-paragraph2">
+							<p><a href="Effects.html">Effects</a></p>
+							<p><a href="index.html">News</a></p>
+							<div class="tabbed-paragraph3">
+								<p><a href="news1.html">Article 1</a></p>
+								<p><a href="news2.html">Article 2</a></p>
+								<p><a href="news3.html">Article 3</a></p>
+								<p><a href="news4.html">Article 4</a></p>
+								<p><a href="news5.html">Article 5</a></p>
+								<p><a href="news6.html">Article 6</a></p>
+								<p><a href="news7.html">Article 7</a></p>
+								<p><a href="news8.html">Article 8</a></p>
+							</div>
+							<p><a href="buildhome.html">Plan a Home</a></p>
+						</div>
+					<p><a href="sign-up.html">Log In</a></p>
+				</div>
+
+			</div>
+
+			<div class="paragraph">
+			<div class="source-title"><h1>Our Sources: </h1></div>
+
+			<h1>Copyright Free Image Libraries: </h1>
+			<div class="citation">
+				Free Design Tool: Presentations, Video, Social Media | CANVA, www.canva.com/. Accessed 8 May 2024. 
+			</div>
+
+			<div class="citation">
+				Free Stock Photos, Royalty Free Stock Images & Copyright Free Pictures · Pexels, www.pexels.com/. Accessed 23 May 2024. 
+			</div>
+
+			<div class="citation">
+				Unsplash. “Beautiful Free Images & Pictures.” Unsplash, unsplash.com/. Accessed 22 May 2024. 
+			</div>
+
+			<div class="citation">
+				Free Icons and Stickers - Millions of Images to Download, www.flaticon.com/. Accessed 23 May 2024
+			</div>
+
+			<h1>Sources used for Information: </h1>
+
+			<div class="citation">
+					AIP. pubs.aip.org/aip/acp/article-pdf/doi/10.1063/1.5029767/14155365/020050_1_online.pdf. 
+					Accessed 22 Dec. 2023.
+			</div>
+			
+			<div class="citation">
+					"All Your EV Info in One Place!" <i>All EV Info</i>, 24 Dec. 2023, allev.info/.
+			</div>
+			
+			<div class="citation">
+					"A Beginner’s Journey into DIY Home Energy Storage - No Solar..." <i>Renewable Heating Hub</i>, 
+					renewableheatinghub.co.uk/forums/energy-storage/a-beginners-journey-into-diy-home-energy-storage-no-solar. 
+					Accessed 25 Dec. 2023.
+			</div>
+			
+			<div class="citation">
+					"Best Electric Cars for 2024 and 2025, Tested." <i>Car and Driver</i>, 
+					www.caranddriver.com/rankings/best-electric-cars. Accessed 21 Dec. 2023.
+			</div>
+			
+			<div class="citation">
+					"Biomass Stoves/Boilers Tax Credit." <i>ENERGY STAR</i>, 
+					www.energystar.gov/about/federal-tax-credits/biomass-stovesboilers. Accessed 22 Dec. 2023.
+			</div>
+			
+			<div class="citation">
+					"Biomass." <i>Biomass - Energy Kids: U.S. Energy Information Administration (EIA)</i>, 
+					www.eia.gov/kids/energy-sources/biomass/#:~:text=Biomass%20contains%20stored%20chemical%20energy,gaseous%20fuels%20through%20various%20processes. 
+					Accessed 29 Dec. 2023.
+			</div>
+			
+			<div class="citation">
+					"Environmental Impacts of Renewable Energy Technologies." <i>Union of Concerned Scientists</i>, 
+					www.ucsusa.org/resources/environmental-impacts-renewable-energy-technologies. Accessed 21 Dec. 2023.
+			</div>
+			
+			<div class="citation">
+					"Facts about Battery Energy Storage." <i>Enel Green Power</i>, 
+					www.enelgreenpower.com/learning-hub/renewable-energies/storage/faq-storage-usa-canada. 
+					Accessed 29 Dec. 2023.
+			</div>
+			
+			<div class="citation">
+					"Fast Facts about Agriculture & Food." <i>American Farm Bureau Federation</i>, 
+					www.fb.org/newsroom/fast-facts. Accessed 21 Dec. 2023.
+			</div>
+			
+			<div class="citation">
+					"Global Top 15 Wind Turbine Manufacturers [2022]." <i>Blackridge Research</i>, 
+					www.blackridgeresearch.com/blog/top-wind-turbine-manufacturers-makers-companies-suppliers. 
+					Accessed 22 Dec. 2023.
+			</div>
+			
+			<div class="citation">
+					Hategan, Ribana. "How to Build an Electric Vehicle?" <i>Vibration Testing Equipment</i>, 
+					Vibration Testing Equipment, 28 Oct. 2021, www.etssolution-asia.com/blog/how-to-build-an-electric-vehicle.
+			</div>
+			
+			<div class="citation">
+					"How Do Wind Turbines Work?" <i>Energy.Gov</i>, 
+					www.energy.gov/eere/wind/how-do-wind-turbines-work. Accessed 29 Dec. 2023.
+			</div>
+			
+			<div class="citation">
+					"How I Built an Electricity Producing Wind Turbine." 
+					www.mdpub.com/Wind_Turbine/. Accessed 22 Dec. 2023.
+			</div>
+			
+			<div class="citation">
+					Hyder, Zeeshan. "The Ultimate Guide to DIY Solar Panels." <i>Compare Solar Companies, Solar Panels, and Solar Prices</i>, 
+					Solar Reviews, 1AD, www.solarreviews.com/blog/pros-and-cons-of-buying-diy-solar-panels.
+			</div>
+			
+			<div class="citation">
+					"Kitchen Appliances." <i>Energy.Gov</i>, 
+					www.energy.gov/energysaver/kitchen-appliances. Accessed 23 Dec. 2023.
+			</div>
+			
+			<div class="citation">
+					"List of Energy Star Energy Efficient Products." <i>ENERGY STAR</i>, 
+					www.energystar.gov/products/products-list. Accessed 26 Dec. 2023.
+			</div>
+			
+			<div class="citation">
+					Ogletree, Allie. "Best Solar Companies of 2024." <i>Forbes</i>, Forbes Magazine, 19 Mar. 2024, 
+					www.forbes.com/home-improvement/solar/best-solar-companies/.
+			</div>
+			
+			<div class="citation">
+					"Recycling Facts and Figures." <i>St Charles County, MO - Official Website</i>, 
+					www.sccmo.org/863/Recycling-Facts#:~:text=The%20amount%20of%20wood%20and,about%20650%20pounds%20per%20person. 
+					Accessed 20 Mar. 2024.
+			</div>
+			
+			<div class="citation">
+					Rosiaantje. "DIY Multi Room Thermostat." <i>Home Assistant Community</i>, 10 May 2019, 
+					community.home-assistant.io/t/diy-multi-room-thermostat/116059.
+			</div>
+			
+			<div class="citation">
+					"Smart Thermostats." <i>ENERGY STAR</i>, 
+					www.energystar.gov/products/smart_thermostats. Accessed 29 Dec. 2023.
+			</div>
+			
+			<div class="citation">
+					Steinbrink, Laura. "The High Cost of Ignoring Sustainability: A Wake-up Call for Business Leaders." 
+					<i>Emerald Blog</i>, Emerald Built Environments, 8 June 2023, 
+					blog.emeraldbe.com/new_blog/the-high-cost-of-ignoring-sustainability-a-wake-up-call-for-business-leaders.
+			</div>
+			
+			<div class="citation">
+					"U.S. Energy Information Administration - EIA - Independent Statistics and Analysis." <i>Geothermal Explained</i>, 
+					U.S. Energy Information Administration (EIA), www.eia.gov/energyexplained/geothermal/. Accessed 29 Dec. 2023.
+			</div>
+			
+			<div class="citation">
+					"U.S. Energy Information Administration - EIA - Independent Statistics and Analysis." <i>Solar Explained</i>, 
+					U.S. Energy Information Administration (EIA), www.eia.gov/energyexplained/solar/#:~:text=Solar%20photovoltaic%20(PV)%20devices%2C,electricity%20for%20an%20entire%20house. 
+					Accessed 26 Dec. 2023.
+			</div>
+			
+			<div class="citation">
+					Velos, Joel. "Which Smart Thermostat Is the Best?: H & H." <i>HVAC Company Serving Delaware, Chester and Montgomery Counties in PA</i>, 1 May 2022, 
+					www.delcohvac.com/blog/which-smart-thermostat-is-the-best/.
+			</div>
+			
+			<div class="citation">
+					Wang, Vera. "Top 10 Energy Storage Companies: Energy Storage." <i>Solarbe Global</i>, 17 Nov. 2023, 
+					www.solarbeglobal.com/top-10-energy-storage-companies/.
+			</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="container1">
+				<div class="row">
+					<div class="footer-col">
+						<img src="pictures/Green Geometric Wind Energy Turbine Logo (2).svg">
+					</div>
+					<div class="footer-col">
+						<h4>LeafLink Pages</h4>
+						<ul>
+							<li><a href="Resources.html">About Us</a></li>
+							<li><a href="solutions.html">Energy Solutions</a></li>
+							<li><a href="Effects.html">Effects</a></li>
+							<li><a href="news.html">News</a></li>
+							<li><a href="buildhome.html">Plan A Home</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>Our Articles</h4>
+						<ul>
+							<li><a href="ApplianceSUB.html">Appliances</a></li>
+							<li><a href="batSUB.html">Batteries</a></li>
+							<li><a href="evSUB.html">Ev</a></li>
+							<li><a href="geoSUB.html">Geothermal</a></li>
+							<li><a href="solarSUB.html">Solar</a></li>
+							<li><a href="windSUB.html">Wind</a></li>
+							<li><a href="new (1).html">Start</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>follow us</h4>
+						<div class="social-links">
+							<a href="https://www.facebook.com/">Fb</a>
+							<a href="https://www.instagram.com/">I</a>
+							<a href="https://www.youtube.com/">Yt</a>
+							<a href="https://twitter.com/?lang=en">Tw</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	
+
+
+
+
+
+	</body>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" 
+	integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" 
+	crossorigin="anonymous" referrerpolicy="no-referrer">
+	</script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" 
+		integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" 
+		crossorigin="anonymous" 
+		referrerpolicy="no-referrer">
+	</script>
+		<script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+		<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+		<script src="https://unpkg.com/gsap@3/dist/ScrollToPlugin.min.js"></script>
+
+		<script
+		src="https://code.jquery.com/jquery-3.7.1.min.js"
+		integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+		crossorigin="anonymous"></script>
+
+		<script defer src="js/app.js"></script>
+		<script defer src="js/main.js"></script>
+		<script defer src="js/search.js"></script>
+
+		<script>
+
+			jQuery(function($) {
+			var doAnimations = function() {
+
+				var offset = $(window).scrollTop() + $(window).height(),
+						$animatables = $('.animatable');
+
+				if ($animatables.length == 0) {
+					$(window).off('scroll', doAnimations);
+				}
+
+				$animatables.each(function(i) {
+					var $animatable = $(this);
+					if (($animatable.offset().top + $animatable.height() - 350) < offset) {
+						$animatable.removeClass('animatable').addClass('animated');
+					}
+				});
+
+			};
+
+			$(window).on('scroll', doAnimations);
+			$(window).trigger('scroll');
+
+		});
+
+		</script>
+
+</html>

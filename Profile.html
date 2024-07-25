@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/sign-up.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script defer src="app.js"></script>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script defer src="index.js"></script>
+  <link rel="shortcut icon" type="x-icon" href = "pictures/Ges (2).png"> 
+  <title>GE Solutions</title>
+</head>
+<body>
+
+  <header class="header">
+		<a href="index.html" class="logo"><img src="./pictures/Ges (2).png" alt="Logo"></a>
+
+		<input type="checkbox" id="check">
+		<label for="check" class="icons">
+			<i class='bx bx-menu' id="menu-icon"></i>
+			<i class='bx bx-x' id="close-icon" ></i>
+		</label>
+
+		<nav class="navbar" id="header">
+			<a href="Energy-Solutions.html">Energy Solutions</a>
+			<a href="Additional-Practices.html">Additional Practices</a>
+			<a href="Effects.html">Effects</a>
+			<a href="Community.html">Community</a>
+			<a href="Resources.html">Resources</a>
+      <a href="sign-up.html" class="button">Sign up</a>
+		</nav>
+	</header>
+
+
+  <div class="container hidden">
+    <div class="login-container">
+      <div class="first-half">
+        <form class="glass" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="a28eb31d-a06a-4e69-b901-7b0eb0583601">
+          <div class="piece">
+            <h1>Sign Up Now</h1>
+            <p>Sign up for our newsletter and stay up to date!</p>
+          </div>
+          <div class="input">
+            <h2>Name</h2>
+            <input type="text" id="name" name="name" placeholder="Your Name (Optional)">
+          </div>
+          <div class="input">
+            <h2>Email</h2>
+            <input type="email" id="email" name="email" placeholder="Please Enter A VALID Email" required>
+          </div>
+          <div class="btn-div">
+            <button>Submit</button>
+          </div>
+        </form>
+      </div>
+      <div class="second-half">
+        <img src="pictures/Hands Holding Earth (HD).png">
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
