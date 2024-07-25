@@ -1,0 +1,269 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.header-align{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header{
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  min-width: 66px;
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4em;
+
+  background: var(--tertiary-color);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  color: var(--secondary-color);
+  transition: all 0.5s ease-in-out;
+
+}
+
+header .logo{
+  font-size: 1.75em;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: Roboto Slab;
+  color: var(--secondary-color);
+
+  display: flex;
+  align-items: center;
+  gap: 3%;
+  margin-left: 2%;
+}
+
+header .logo svg{
+  width: 40px;
+}
+
+header .logo .svg-color{
+  fill: var(--secondary-color);
+}
+
+header ul{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+header ul li{
+  position: relative;
+  list-style: none;
+  float: left;
+}
+
+header ul li a{
+  color: var(--teritary-color);
+  font-size: 1.1em;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.3s ease-in-out;
+
+  font-family: Mulish;
+  font-weight: 500;
+}
+
+header ul .li1 a{
+  padding: 20px 30px;
+}
+
+header ul .li2 a{
+  background-color: var(--fourth-color);
+  padding: 8px 35px;
+  border-radius: 22px
+}
+
+header ul .li2 a:hover{
+  color: #fffef8;;
+  background-color: var(--fifth-color);
+}
+
+
+header ul li a:focus,
+header ul li a:hover {
+  color: var(--secondary-color);
+}
+
+header ul .li1 a:focus:after,
+header ul .li1 a:hover:after {
+  width: 80%;
+  left: 10%;
+}
+
+header ul .li1 a:after {
+  content: "";
+  pointer-events: none;
+  top: 46px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: var(--primary-color);
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+header ul li a:hover::before{
+  width: 90%;
+}
+
+
+header ul li ul{
+  position: absolute;
+  left: 0;
+  width: 200px;
+  display: none;
+  padding-top: 0px;
+  padding-left: 15px;
+
+  background: var(--tertiary-color)
+
+}
+
+header ul li:hover ul{
+  display: block;
+}
+
+header ul li ul li{
+  position: relative;
+  width: 100%;
+  top: 0;
+}
+
+
+@media(max-width: 1000px){
+  header{
+    padding: 10px 20px;
+    background: var(--tertiary-color);
+  }
+
+  header ul li a:focus,
+  header ul li a:hover {
+  color: var(--primary-color);
+}
+
+  header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  header nav{
+    position: absolute;
+    width: 100%;
+    top: 53px;
+    left: 0;
+    background: var(--tertiary-color);
+    display: none;
+  }
+
+  header.active nav{
+    display: initial;
+  }
+
+  header nav ul .li1{
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+  }
+
+  header ul .li1 a:focus:after,
+  header ul .li1 a:hover:after {
+  width: 50%;
+  left: 0%;
+  }
+
+  header ul li a:hover::before{
+    width: 100%;
+  }
+
+  header nav ul li ul{
+    position: relative;
+    width: 100%;
+    left: 0;
+    background-color: black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+  }
+
+  header nav ul li ul{
+    top: 0;
+    left: 0;
+  }
+
+  .menuToggle{
+    top: 26px;
+    position: relative;
+    width: 40px;
+    height: 50px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2%;
+  }
+
+  .menuToggle:before{
+    content: " ";
+    position: absolute;
+    width: 70%;
+    height: 3px;
+    background-color: var(--secondary-color);
+    transform: translateY(-12px);
+    box-shadow: 0 12px var(--secondary-color);
+    transition: all 0.2s ease;
+  }
+
+  .menuToggle:after{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: var(--secondary-color);
+    background: var(--secondary-color);
+    transform: translateY(-12px);
+    transition: all 0.2s ease;
+  }
+
+  header.active .menuToggle{
+    top: 23px;
+  }
+
+  header.active .menuToggle::before{
+    transform: rotate(45deg);
+    box-shadow: 0 0 var(--secondary-color);
+    width: 100%;
+  }
+
+  header.active .menuToggle::after{
+    transform: rotate(315deg);
+    box-shadow: 0 0 var(--secondary-color);
+    background-color: var(--secondary-color);
+  }
+
+  header ul .li2 a{
+    margin-top: 15%;
+    margin-bottom: 10%;
+    background-color: var(--fourth-color);
+    padding: 12px 155px;
+    border-radius: 22px;
+    text-align: center;
+    
+  }
+}
