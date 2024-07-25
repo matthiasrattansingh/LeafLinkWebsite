@@ -1,0 +1,540 @@
+
+
+.fullpage-container{
+  height: 95vh;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+
+.fullpage {
+  position: absolute;
+  top: -10;
+  width: 100%;
+  height: 100%;
+  background: var(--tertiary-color);
+
+  display: flex;
+
+  border-radius: 7px;
+  margin-bottom: 50px;
+}
+
+.fullpage1 {
+  left: 0;
+  top: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fullpage2 {
+  left: 0px;
+  top: 0px;
+}
+
+.fullpage3 {
+  left: 0px;
+  top: 0px;
+}
+
+/*------------------------ PAGE POSITIIONGI---------------------------*/
+
+/*-----first page -----*/
+
+.fullpage-one-container{
+  height: 75%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  position: relative;
+}
+
+.first-home-img{
+  height: 100%;
+}
+
+.first-home-img img{
+  height: 100%;
+  margin-top: 0;
+}
+
+.textbox1{
+  position: absolute;
+  top: 80%;
+  text-align: center;
+}
+
+.textbox1 h1{
+  font-size: clamp(3rem, 5vw, 4rem);
+  font-family: Roboto Slab;
+}
+
+.textbox1 p{
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  font-family: Mulish;
+  color: var(--primary-color);
+
+}
+
+.img-absolute1{
+  position: absolute;
+  top: -600px;
+  left: -600px;
+  z-index: -1;
+}
+
+.img-absolute1 img{
+  height: 1200px;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.img-absolute2{
+  position: absolute;
+  top: 500px;
+  right: -500px;
+  z-index: -1;
+}
+
+.img-absolute2 img{
+  height: 1200px;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+/*SEARCH BAR*/
+
+.search-container p{
+  color: var(--secondary-color);
+  margin: 0;
+  padding: 0;
+  font-family: Mulish;
+}
+
+input{
+  padding: 8px 15px;
+  width: 50%;
+  border-radius: 200px;
+  border: none;
+  border: 1px solid var(--secondary-color);
+  background: transparent;
+  font-family: Mulish;
+  color: var(--secondary-color);
+}
+
+.search-container {
+  position: relative;
+  width: 80%;
+  margin: 50px auto;
+}
+
+#search-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.autocomplete-list {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  max-height: 150px;
+  margin-top:2%;
+  overflow-y: auto;
+  background-color: var(--tertiary-color);
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+
+  font-family: Mulish;
+}
+
+.autocomplete-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.autocomplete-item:hover {
+  background-color: var(--dark);
+}
+
+/*------- SECOND PAGE -------*/
+
+.fullpage-two-container{
+  height: 88%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding-top: 50px;
+
+}
+
+.textbox2{
+  padding-bottom: 3%;
+  margin-left: 2.5%;
+}
+
+.textbox2 h1{
+  font-family: Roboto Slab;
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+}
+
+.textbox2 p{
+  font-family: Mulish;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+
+
+
+/*------- THIRD PAGE -------*/
+
+.fullpage-third-container{
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  align-items: start;
+  position: relative;
+
+}
+
+.card-and-text2{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0%;
+  width: 50%;
+  margin-top: 4%;
+}
+
+.paragraph-home{
+  width: 100%;
+  margin-left: 2.5%;
+}
+
+.paragraph-home p{
+  font-size: 1.2rem;
+  font-family: Mulish;
+  line-height: 30px;
+  color: var(--secondary-color)
+}
+
+.final-box{
+  margin-left: 2.5%;
+  margin-top: 10%;
+}
+
+.final-box button{
+  border: none;
+  padding: 18px 40px;
+  background-color: var(--fourth-color);
+  border-radius: 280px;
+  color: var(--tertiary-color);
+  font-size: 1.2rem;
+  font-family: Mulish;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.final-box button a{
+  text-decoration: none;
+  color: var(--tertiary-color);
+}
+
+.final-box button:hover{
+  background-color: var(--primary-color);
+}
+
+.search-container2{
+  margin-top: 3%;
+  margin-left: 2.5%;
+}
+
+.search-container2 p{
+  color: var(--secondary-color);
+  margin: 0;
+  padding: 0;
+  margin-bottom: 2%;
+}
+
+@media (max-width: 1268px){
+  .fullpage-container{
+    height: 155vh;
+ 
+  }
+
+  .img-absolute1{
+    display: none;
+  }
+  
+  
+  .img-absolute2{
+    display: none;
+  }
+
+  .fullpage-one-container{
+    height: 100%;
+  }
+  
+  .first-home-img{
+    height: 50%;
+  }
+  
+  .first-home-img img{
+    height: 100%;
+    margin-top: 0;
+  }
+  
+  .textbox1{
+    position: absolute;
+    top: 40%;
+    text-align: center;
+  }
+
+
+
+
+
+  .fullpage-two-container{
+    height: 88%;
+    width: 100%;
+
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  
+  .second-home-img{
+    height: 20%;
+    width: 50%;
+    margin-top: 0%;
+    display: none
+  }
+  
+  .second-home-img img{
+    height: 100%;
+    width: 100%;
+  }
+  
+  .card-and-text{
+    width: 100%;
+  }
+  
+  .textbox2{
+    padding-bottom: 3%;
+    margin-left: 2.5%;
+  }
+  .card-and-text2{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    width: 100%;
+    margin-top: 4%;
+  }
+
+
+  input{
+    padding: 8px 15px;
+    width: 70%;
+    border-radius: 200px;
+    border: none;
+    border: 1px solid var(--secondary-color);
+    background: transparent;
+  }
+
+}
+
+
+/*--------------------------  QUIZ ----------------------------*/
+
+.fullpage-two-container h1{
+  text-align: center;
+  margin-top: 1%;
+  font-family: Roboto Slab;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+
+}
+
+.container9{
+  display: flex;
+  background-color: black;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+
+  width: 80%;
+  height: 100%;
+  gap: 5%;
+
+  margin-top: 2%;
+  margin-left: 10%;
+}
+
+.image-container {
+  width: 50%;
+  padding-right: 20px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.questionnaire-container {
+  width: 40%;
+  margin-top: 1%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #4caf50;
+  border-radius: 5px;
+  width: 0;
+  transition: width 0.5s ease;
+}
+
+.card {
+  border: 1px solid #fffef8;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.card:hover {
+  background-color: rgba(255, 255, 255, 0.281);
+}
+
+.card.selected {
+  background-color: #4caf50;
+  color: var(--tertiary-color);
+  font-family: Roboto Slab;
+}
+
+#questionnaire{
+  margin-top: 5%;
+}
+
+#question {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #fffef8;
+  font-family: Roboto Slab;
+}
+
+#options {
+  display: flex;
+  flex-direction: column;
+  color: #fffef8;
+  font-family: Mulish;
+}
+
+#next-btn {
+  margin-top: 2%;
+  width: 100%;
+  background-color: #4caf50;
+  color: var(--tertiary-color);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: Mulish;
+}
+
+#next-btn:hover {
+  background-color: #45a049;
+}
+
+h2{
+  color: #fffef8;
+  margin-bottom: 5%;
+  font-family: Roboto Slab;
+}
+
+p{
+  color: #fffef8;
+  margin-top: 2%;
+  font-family: Mulish;
+}
+
+@media (max-width: 1280px){
+  .container9{
+  
+    width: 80%;
+    height: 100%;
+    gap: 5%;
+  
+    margin-top: 2%;
+    margin-left: 0%;
+
+    flex-direction: column;
+  }
+
+  .fullpage-two-container{
+    margin-top: 0;
+  }
+
+  .fullpage-two-container h1{
+    text-align: center;
+    margin-top: 0%;
+    font-family: Roboto Slab;
+    font-size: clamp(1rem, 5vw, 3.5rem);
+  
+  }
+
+  .image-container {
+    width: 100%;
+    height: 50%;
+    padding-right: 20px;
+    display: none;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: none;
+  }
+  
+  .questionnaire-container {
+    width: 100%;
+    margin-top: 0%;
+    height: 100%;
+  
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
