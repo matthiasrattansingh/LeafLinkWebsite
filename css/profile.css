@@ -1,0 +1,64 @@
+/* profile.css */
+
+/* Assuming you're using the same color variables */
+
+.profile-page {
+    /* Overall page styling */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Mulish, sans-serif; /* Assuming Mulish is the primary font */
+  }
+  
+  .profile-header {
+    /* Style the header similar to the homepage */
+    text-align: center;
+    margin-bottom: 50px;
+    h1 {
+      /* Inherit h1 styles from homepage */
+      /* ... */
+    }
+  }
+  
+  .profile-content {
+    /* Main content area */
+    max-width: 800px;
+    padding: 20px;
+    text-align: center; /* Adjust as needed */
+  
+    /* Style the profile image */
+    img {
+      max-width: 200px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+  
+    /* Style the about me section */
+    h2 {
+      /* Inherit h2 styles from homepage */
+      /* ... */
+    }
+  
+    p {
+      /* Style the paragraph */
+      font-size: 16px;
+      line-height: 1.5;
+      color: var(--text-color); /* Assuming a text color variable */
+    }
+  
+    /* Style the contact information */
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+    }
+  
+    li {
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Add more styles as needed for specific elements */
+  
