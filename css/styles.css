@@ -34,14 +34,15 @@
   transform: scale(1.05); 
 }
 
-/*DARK MODE*/
+/*DARK MODE BUTTON*/
+
 .img-fixed{
   background-color:#fffef8;
   padding: 13px 15px;
   border-radius: 200px;
   position: fixed;
   top: 88%;
-  right: 2%;
+  right: 5%;
   cursor: pointer;
   z-index: 1000;
 
@@ -62,10 +63,11 @@
 }
 
 
+/*GENERAL STYLES*/
 body {
   background-color: var(--tertiary-color);
   color: var(--secondary-color);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; /*how all animations play*/
 }
 
 footer {
@@ -94,42 +96,6 @@ p{
   visibility: hidden;
 }
 
-
-/*HIGHLIGHT TEXT*/
-
-@keyframes highlight {
-	to {
-		background-position: 0;
-	}
-}
-
-mark {
-	animation: highlight linear forwards;
-	animation-timeline: view(60% 20%);
-	background: linear-gradient(
-		to right,
-		var(--primary-color) 50%,
-		transparent 50%
-	);
-	background-position: 100%;
-	background-size: 200% 100%;
-	border-radius: 0.125rem;
-	padding-inline: 0.125rem;
-}
-
-.mark1 {
-	animation: highlight linear forwards;
-	animation-timeline: view(60% 20%);
-	background: linear-gradient(
-		to right,
-		var(--tertiary-color) 50%,
-		transparent 50%
-	);
-	background-position: 100%;
-	background-size: 200% 100%;
-	border-radius: 0.125rem;
-	padding-inline: 0.125rem;
-}
 
 /*------------------------  ANIMATIONS --------------------------*/
 
