@@ -1,0 +1,407 @@
+
+/* Copy of hero section from index.html*/
+
+
+h1 {
+  color: var(--secondary-color);
+  letter-spacing: 3px;
+}
+
+.hero-textbox{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+
+  height: 100%;
+  top: 28%;
+  left: 5%;
+  gap: 2.5%;
+}
+
+.faded{
+  color: var(--secondary-color);
+  font-family: Mulish;
+}
+
+.absolute-p{
+  position: absolute;
+  top: 16%;
+  right: 0;
+  padding: 5%;
+
+  width: 45%;
+  font-family: Mulish;
+  line-height: 30px;
+
+}
+
+.actual-textbox p{
+  width: 80%;
+  font-family: Mulish;
+  line-height: 30px;
+  font-weight: 900;
+}
+
+.fixed2{
+  width: 100%;
+  overflow: hidden;
+  height: 75vh;
+  transition: all 0.5s ease-in-out;
+}
+
+.hero-video{
+  height: 75vh;
+  width: 100%;
+  filter: var(--brightness);
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.hero-video img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: top;
+  position: absolute;
+  filter: var(--brightness);
+}
+
+.hero-text{
+  font-size: clamp(2.2rem, 8vw, 4rem); /* Reduced size of title */
+  color: var(--secondary-color);
+  font-family: Roboto Slab;
+  font-weight: 700;
+  letter-spacing: 2px;;
+}
+
+@media (max-width: 1280px){
+  .hero-textbox{
+    width: 100%;
+    height: 100%;
+
+    left: 0%;
+  }
+
+  .hero-text{
+    width: 80%;
+  }
+
+  .actual-textbox{
+    margin-left: 10%;
+  }
+
+  .hero-p-text{
+    margin-left: 10%;
+  }
+  
+}
+
+.hero-p-text{
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  font-weight: 900;
+  width: 80%; /* reduced width so the text fits in view*/
+}
+
+/*           Part 6 on contact page      */
+
+.part6{
+  display: flex;
+  height: 800px;
+}
+
+.info-container2{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+}
+
+
+.img-info-holder2{
+  width: 55%;
+  height: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  padding: 5%;
+}
+
+.img-info-holder2 img{
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+}
+
+.textbox2{
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  width: 80%;
+  padding: 5%;
+  height: 80%;
+}
+
+.textbox2 h1{
+  font-size: clamp(2rem, 8vw, 3.5rem);
+  font-family:  Roboto Slab;
+  font-weight: 400;
+}
+
+.textbox2 p{
+  font-size: clamp(.8rem, 5vw, 1.2rem);
+  font-family: Mulish;
+  font-weight: 400;
+}
+
+.textbox2 a{
+  text-decoration: none;
+  color: var(--secondary-color);
+
+  padding: 2% 5%;
+  background-color: var(--fourth-color);
+  width: 250px;
+  text-align: center;
+  border-radius: 22px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-family: Mulish;
+  font-weight: 400;
+}
+
+.textbox2 a:hover{
+  background-color: var(--primary-color);
+}
+
+@media (max-width: 1568px){
+  .part6{
+    height: 800px;
+  }
+
+  .textbox2 h1{
+    font-size: 2.2rem;
+  }
+
+  .textbox2{
+    gap: 10%;
+    height: 80%;
+  }
+}
+
+@media (max-width: 968px){
+  .part6{
+    margin-top: 20%;
+    height: 1200px;
+  }
+
+  .info-container2{
+    flex-direction: column;
+    gap: 18%;
+    padding: 5%;
+  }
+
+  .img-info-holder2{
+    width: 100%;
+    height: 40%;
+  }
+  
+  .textbox2{
+    width: 100%;
+    height: 40%;
+    padding: 0;
+    gap: 2%;
+  }
+
+  .textbox2 a{
+    margin-top: 2%;
+  }
+
+  .textbox2 h1{
+    margin-bottom: 1%;
+  }
+  
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------- survey (if yall want to use later) ----------*/
+
+.survey-container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  gap: 12%;
+
+}
+
+.survey-title{ 
+  margin-top: 5%;
+  width: 40%;
+}
+
+.survey-title h1{
+  font-size: clamp(2rem, 8vw, 3.55rem);
+  margin-bottom: 5%;
+  font-family: Roboto Slab;
+}
+
+.survey-title p{
+  font-size: 1.2rem;
+  font-family: Mulish;
+  line-height: 30px;
+}
+
+.faded2{
+  font-size: 1rem;
+  color: var(--primary-color);
+  letter-spacing: 3px;
+  margin-bottom: 1%;
+  font-family: Mulish;
+}
+
+.container3 {
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 35%;
+  height: 80%;
+  z-index: 1;
+  background-color: var(--tertiary-color);
+  margin-top: 5%;
+}
+
+.container3 h1 {
+  text-align: center;
+  margin-bottom: 5%;
+  font-family: Roboto Slab;
+}
+
+label {
+  margin-bottom: .1px;
+  text-align: center;
+  font-family: Mulish;
+}
+
+input{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 1%;
+}
+
+select, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 3%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 1%;
+}
+
+.container3 button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+
+  width: 100%;
+  padding: 18px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: Mulish;
+  font-size: 1.2rem;
+  
+}
+
+.container3 button:hover {
+  background-color: #45a049;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 10px;
+}
+
+legend {
+  font-weight: bold;
+}
+
+label input {
+  margin-right: 5px;
+}
+
+.img-blob{
+  position: absolute;
+  top: 25%;
+  z-index: -1;
+}
+
+.img-blob img{
+  opacity: 0.1;
+  height: 2000px;
+  z-index: -1;
+}
+
+
+@media (max-width: 1068px){
+  .survey-container{
+    width: 100%;
+    height: 175vh;
+    gap: 2%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .survey-title{ 
+    margin-top: 0%;
+    width: 95%;
+  }
+
+  .container3 {
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 95%;
+    height: 90vh;
+    z-index: 1;
+    background-color: var(--tertiary-color);
+    margin-top: 5%;
+  }
+}

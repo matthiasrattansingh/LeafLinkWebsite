@@ -19,6 +19,7 @@
     h1 {
       /* Inherit h1 styles from homepage */
       /* ... */
+      font-size: 22px;
     }
   }
   
@@ -39,6 +40,7 @@
     h2 {
       /* Inherit h2 styles from homepage */
       /* ... */
+      font-size: 22px;
     }
   
     p {
@@ -60,5 +62,101 @@
     }
   }
   
-  /* Add more styles as needed for specific elements */
-  
+/* Add more styles as needed for specific elements */
+
+.hero-video{ /*  top hero section/background   */
+  height: 45vh;
+  width: 100%;
+  filter: var(--brightness);
+  overflow: hidden;
+}
+
+.hero-video img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: var(--brightness);
+}
+
+.pfp{
+  width: 350px; /*set as default height and width (change if you want it smaller/larger) */
+
+  position: absolute; /*relative to the page height and width*/
+  top: 20%;
+  left: 10%;
+}
+
+.pfp img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.profile-text{
+  display: flex;
+  flex-direction: column;
+  margin-left: 35%;
+  padding: 3%;
+
+  height: 60vh;
+}
+
+.profile-text h2{
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 2%;
+}
+
+.profile-text p{
+  width: 80%;
+}
+
+@media (max-width: 1380px){
+  .hero-video{
+    height: 300px;
+  }
+
+  .pfp{
+    left: 5%;
+  }
+
+  .profile-text{
+    margin-left: 40%;
+  }
+}
+
+@media (max-width: 1080px){
+  .pfp{
+    display: block;
+    left: 10%;
+  }
+
+  .profile-text{
+    height: 500px;
+    margin-left: 5%;
+    margin-top: 55%;
+  }
+
+  .profile-text p{
+    width: 95%;
+  }
+}
+
+@media (max-width: 740px){
+  .pfp{
+    display: block;
+    left: 8%;
+    width: 84%;
+    height: 400px;
+  }
+
+  .profile-text{
+    height: 500px;
+    margin-left: 5%;
+    margin-top: 90%;
+  }
+
+  .profile-text p{
+    width: 95%;
+  }
+}

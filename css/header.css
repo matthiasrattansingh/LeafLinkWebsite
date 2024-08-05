@@ -157,7 +157,7 @@ header ul li ul li{
   header ul li a:focus,
   header ul li a:hover {
   color: var(--primary-color);
-}
+  }
 
   header ul{
     position: relative;
